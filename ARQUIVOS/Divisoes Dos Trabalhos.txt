@@ -1,0 +1,36 @@
+Tiago
+
+cliente (x contas bancarias)
+contas bancarias
+Despesas do escritorio
+EMPRESA (Parametrizacao)
+
+Gerenciamento Processos
+Honorarios do Processo
+Custas de processos
+Custas de Clientes (X)
+Recebimentos (baixa)
+
+
+RF_S9: Relatório de clientes
+RF_S7: Relatório de balanço do mês 
+RF_S5: Relatório de honorários
+RF_S1: Relatório de processos 
+
+
+Mário
+
+Funcionarios
+Pastas
+Cadastro de usuario
+Login
+
+Movimentacao de pastas
+Anexar doc digital a um processo
+Movimentacao em conta
+Contas a pagar(lancar e baixar)
+
+RF_S2: Relatório de transações bancárias 
+RF_S3: Relatório de contas a pagar 
+RF_S6: Relatório de localização de processo em pasta 
+RF_S8: Relatório de Mala direta 

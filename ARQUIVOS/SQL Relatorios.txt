@@ -1,0 +1,8 @@
+SELECT  C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao
+FROM Processos PO, Processos_Clientes PC, Clientes C
+WHERE PO.pro_numero = PC.pro_numero and C.cli_codigo = PC.cli_codigo
+
+SELECT  C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao
+FROM Processos PO, Processos_Clientes PC, Clientes C
+WHERE PO.pro_numero = PC.pro_numero and C.cli_codigo = PC.cli_codigo AND C.cli_nome like @nome
+

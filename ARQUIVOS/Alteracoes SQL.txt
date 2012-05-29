@@ -1,0 +1,28 @@
+CREATE TABLE Movimentacao
+(
+    mov_codigo  int  NOT NULL IDENTITY (1,1) ,
+    mov_data  datetime  NULL ,
+    mov_valor  decimal(10,2)  NOT NULL ,
+    mov_codDestino  int  NULL ,
+    mov_tipo nchar  NULL ,
+    Con_Codigo  int  NOT NULL 
+);
+
+mov_codigo -> identity
+
+CREATE TABLE ContasPagar
+(
+	cop_codigo int NOT NULL IDENTITY (1,1),
+	
+	cop_descricao  nvarchar(100)  NOT NULL ,
+                cop_dataVenc  datetime NOT NULL ,
+	cop_valor  decimal(10,3)  NOT NULL,
+	cop_dataPag datetime NULL,
+	Fun_Codigo  int  NULL
+);
+
+ALTER TABLE ContasPagar
+    ADD CONSTRAINT  XPKContasPagar PRIMARY KEY (cop_codigo);
+	
+ALTER TABLE ContasPagar
+    ADD CONSTRAINT  FK_ContasPagarFuncionarios FOREIGN KEY (Fun_Codigo) REFERENCES Funcionarios(Fun_Codigo)

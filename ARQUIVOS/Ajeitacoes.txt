@@ -1,0 +1,11 @@
+Movimento em conta
+
+	Quando excluir uma transferencia tem que excluir a origem e o destino (auto relacionamento)
+(OK) 	Acrescentar os dados da conta na consulta de movimentacao em conta
+
+Contas a Pagar
+
+	so pode excluir e alterar se nao tiver sido paga
+	dar baixa
+	pagar a menos gera uma nova
+	ctrl + z

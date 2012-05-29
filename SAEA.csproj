@@ -1,0 +1,781 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9E0EC9C9-D724-4914-A006-9D3C0FF200DF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SAEA</RootNamespace>
+    <AssemblyName>SAEA</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Akatsuki\Desktop\LIXO\SAEA_MarioMarques_TiagoElias\instaladorPublish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>6</ApplicationRevision>
+    <ApplicationVersion>1.1.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icone1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5B64CF4E4A7FEDF694C06644516289E4C1C0DCC8</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SAEA_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="associativa\FrmAssociaFuncionarioContaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="associativa\FrmAssociaFuncionarioContaBancaria.Designer.cs">
+      <DependentUpon>FrmAssociaFuncionarioContaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="associativa\FrmAssociaProcessoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="associativa\FrmAssociaProcessoCliente.Designer.cs">
+      <DependentUpon>FrmAssociaProcessoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="associativa\FrmAssociaProcessoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="associativa\FrmAssociaProcessoFuncionario.Designer.cs">
+      <DependentUpon>FrmAssociaProcessoFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.Designer.cs">
+      <DependentUpon>frmBuscaCadastroContaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCadastroContasEsc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCadastroContasEsc.Designer.cs">
+      <DependentUpon>frmBuscaCadastroContasEsc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmBuscaCliente.Designer.cs">
+      <DependentUpon>frmBuscaCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="associativa\frmAssociaClienteContaBancaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="associativa\frmAssociaClienteContaBancaria.Designer.cs">
+      <DependentUpon>frmAssociaClienteContaBancaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\FrmBuscaBancos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\FrmBuscaBancos.Designer.cs">
+      <DependentUpon>FrmBuscaBancos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\FrmBuscaTiposCusto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\FrmBuscaTiposCusto.Designer.cs">
+      <DependentUpon>FrmBuscaTiposCusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmConsultaFuncionariosAlter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\buscas\frmConsultaFuncionariosAlter.designer.cs">
+      <DependentUpon>frmConsultaFuncionariosAlter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroBanco.Designer.cs">
+      <DependentUpon>frmCadastroBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroContasBancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroContasBancarias.Designer.cs">
+      <DependentUpon>frmCadastroContasBancarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroPastas.Designer.cs">
+      <DependentUpon>frmCadastroPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroFuncionarios.Designer.cs">
+      <DependentUpon>frmCadastroFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroDespesasEscritorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroDespesasEscritorio.Designer.cs">
+      <DependentUpon>frmCadastroDespesasEscritorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmCadastroClientes.Designer.cs">
+      <DependentUpon>frmCadastroClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FrmCadastroTiposCusto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FrmCadastroTiposCusto.Designer.cs">
+      <DependentUpon>FrmCadastroTiposCusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmConsultaFuncionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmConsultaFuncionarios.Designer.cs">
+      <DependentUpon>frmConsultaFuncionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\frmConsultaPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\frmConsultaPastas.Designer.cs">
+      <DependentUpon>frmConsultaPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AssociaClienteContaBanco.cs" />
+    <Compile Include="Classes\AtualizacaoHonorario.cs" />
+    <Compile Include="Classes\Banco.cs" />
+    <Compile Include="Classes\BancoM.cs" />
+    <Compile Include="Classes\CadastroBancos.cs" />
+    <Compile Include="Classes\CadastroCliente.cs" />
+    <Compile Include="Classes\CadastroContas.cs" />
+    <Compile Include="Classes\CadastroDadosEmpresa.cs" />
+    <Compile Include="Classes\CadastroDespesasEscritorio.cs" />
+    <Compile Include="Classes\CadastroContratos.cs" />
+    <Compile Include="Classes\CadastroTiposCusto.cs" />
+    <Compile Include="Classes\AssociaFuncionarioContaBanco.cs" />
+    <Compile Include="Classes\Contas.cs" />
+    <Compile Include="Classes\ContasPagar.cs" />
+    <Compile Include="Classes\DocumentoDigital.cs" />
+    <Compile Include="Classes\Funcionarios.cs" />
+    <Compile Include="Classes\Funcoes.cs" />
+    <Compile Include="Classes\GerenciamentoMovimentacoes.cs" />
+    <Compile Include="Classes\FuncionariosAlter.cs" />
+    <Compile Include="Classes\GerenciamentoCustasProcesso.cs" />
+    <Compile Include="Classes\GerenciamentoRecebimentos.cs" />
+    <Compile Include="Classes\Gerais.cs" />
+    <Compile Include="Classes\GerenciamentoProcessos.cs" />
+    <Compile Include="Classes\MovContas.cs" />
+    <Compile Include="Classes\Pastas.cs" />
+    <Compile Include="Classes\Processos.cs" />
+    <Compile Include="Classes\RelProcesso.cs" />
+    <Compile Include="Classes\Usuarios.cs" />
+    <Compile Include="Ferramentas\frmAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\frmAlterarSenha.designer.cs">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ferramentas\frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\frmBackup.Designer.cs">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ferramentas\frmCadastroUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\frmCadastroUsuarios.Designer.cs">
+      <DependentUpon>frmCadastroUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ferramentas\frmConsultaUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\frmConsultaUsuarios.designer.cs">
+      <DependentUpon>frmConsultaUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ferramentas\FrmTelaCrystalReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\FrmTelaCrystalReports.Designer.cs">
+      <DependentUpon>FrmTelaCrystalReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ferramentas\frmVisualizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ferramentas\frmVisualizador.designer.cs">
+      <DependentUpon>frmVisualizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.Designer.cs">
+      <DependentUpon>FrmBuscaCustoProcessoM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaProcessos.Designer.cs">
+      <DependentUpon>FrmBuscaProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaHonorario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\buscas\FrmBuscaHonorario.Designer.cs">
+      <DependentUpon>FrmBuscaHonorario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmAtualizacaoCustasClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmAtualizacaoCustasClientes.designer.cs">
+      <DependentUpon>frmAtualizacaoCustasClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmConsultaLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmConsultaLancamentos.designer.cs">
+      <DependentUpon>frmConsultaLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmContasAPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmContasAPagar.designer.cs">
+      <DependentUpon>frmContasAPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoProcessos.designer.cs">
+      <DependentUpon>frmGerenciamentoProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoContasPagar.designer.cs">
+      <DependentUpon>frmGerenciamentoContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoRecebimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoRecebimentos.designer.cs">
+      <DependentUpon>frmGerenciamentoRecebimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmAtualizacaoHonorariosProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmAtualizacaoHonorariosProcessos.designer.cs">
+      <DependentUpon>frmAtualizacaoHonorariosProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmLancamentoCustasProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmLancamentoCustasProcessos.designer.cs">
+      <DependentUpon>frmLancamentoCustasProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmAnexarDocumentoDigital.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmAnexarDocumentoDigital.designer.cs">
+      <DependentUpon>frmAnexarDocumentoDigital.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoConta.designer.cs">
+      <DependentUpon>frmMovimentacaoConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoPastas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoPastas.designer.cs">
+      <DependentUpon>frmMovimentacaoPastas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentacaoProcessos.designer.cs">
+      <DependentUpon>frmMovimentacaoProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentoConta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmMovimentoConta.designer.cs">
+      <DependentUpon>frmMovimentoConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoCalendario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movimentacao\frmGerenciamentoCalendario.designer.cs">
+      <DependentUpon>frmGerenciamentoCalendario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioContasAAAAPAGAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioContasAAAAPAGAR.designer.cs">
+      <DependentUpon>frmRelatorioContasAAAAPAGAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioLocalizacaoProcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioLocalizacaoProcesso.designer.cs">
+      <DependentUpon>frmRelatorioLocalizacaoProcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioMalaDireta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioMalaDireta.designer.cs">
+      <DependentUpon>frmRelatorioMalaDireta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioTransacoesBancarias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioTransacoesBancarias.designer.cs">
+      <DependentUpon>frmRelatorioTransacoesBancarias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioClientes.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioClientes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioClientesAgrupado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioClientesAgrupado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioHonorarios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioHonorarios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioMovimentacao.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioMovimentacao.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioProcessos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioProcessos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\FCRRelatorioProcessosGCliente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FCRRelatorioProcessosGCliente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\RelLocalizacaoProcesso.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelLocalizacaoProcesso.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\RelTransacoesBancarias.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelTransacoesBancarias.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\RelTransacoesBancarias1.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelTransacoesBancarias1.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\FrmRelatorioClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\FrmRelatorioClientes.designer.cs">
+      <DependentUpon>FrmRelatorioClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmCadastroEmpresaInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmCadastroEmpresaInicial.Designer.cs">
+      <DependentUpon>frmCadastroEmpresaInicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Relatorios\frmRelatorioMovimentacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioMovimentacoes.designer.cs">
+      <DependentUpon>frmRelatorioMovimentacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioHonorarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioHonorarios.designer.cs">
+      <DependentUpon>frmRelatorioHonorarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioProcessos.designer.cs">
+      <DependentUpon>frmRelatorioProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelasPrincipais\frmMenuPrincipal.designer.cs">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="_SAEA_Banco_DataSet.cs">
+      <DependentUpon>_SAEA_Banco_DataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="_SAEA_Banco_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_SAEA_Banco_DataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="associativa\FrmAssociaFuncionarioContaBancaria.resx">
+      <DependentUpon>FrmAssociaFuncionarioContaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="associativa\FrmAssociaProcessoCliente.resx">
+      <DependentUpon>FrmAssociaProcessoCliente.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="associativa\FrmAssociaProcessoFuncionario.resx">
+      <DependentUpon>FrmAssociaProcessoFuncionario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.resx">
+      <DependentUpon>frmBuscaCadastroContaBancaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCadastroContasEsc.resx">
+      <DependentUpon>frmBuscaCadastroContasEsc.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCliente.resx">
+      <DependentUpon>frmBuscaCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="associativa\frmAssociaClienteContaBancaria.resx">
+      <DependentUpon>frmAssociaClienteContaBancaria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\FrmBuscaBancos.resx">
+      <DependentUpon>FrmBuscaBancos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\FrmBuscaTiposCusto.resx">
+      <DependentUpon>FrmBuscaTiposCusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\buscas\frmConsultaFuncionariosAlter.resx">
+      <DependentUpon>frmConsultaFuncionariosAlter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroBanco.resx">
+      <DependentUpon>frmCadastroBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroClientes.resx">
+      <DependentUpon>frmCadastroClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroContasBancarias.resx">
+      <DependentUpon>frmCadastroContasBancarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroDespesasEscritorio.resx">
+      <DependentUpon>frmCadastroDespesasEscritorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroFuncionarios.resx">
+      <DependentUpon>frmCadastroFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmCadastroPastas.resx">
+      <DependentUpon>frmCadastroPastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FrmCadastroTiposCusto.resx">
+      <DependentUpon>FrmCadastroTiposCusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmConsultaFuncionarios.resx">
+      <DependentUpon>frmConsultaFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\frmConsultaPastas.resx">
+      <DependentUpon>frmConsultaPastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\frmAlterarSenha.resx">
+      <DependentUpon>frmAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\frmBackup.resx">
+      <DependentUpon>frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\frmCadastroUsuarios.resx">
+      <DependentUpon>frmCadastroUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\frmConsultaUsuarios.resx">
+      <DependentUpon>frmConsultaUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\FrmTelaCrystalReports.resx">
+      <DependentUpon>FrmTelaCrystalReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ferramentas\frmVisualizador.resx">
+      <DependentUpon>frmVisualizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.resx">
+      <DependentUpon>FrmBuscaCustoProcessoM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaProcessos.resx">
+      <DependentUpon>FrmBuscaProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaHonorario.resx">
+      <DependentUpon>FrmBuscaHonorario.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmAtualizacaoCustasClientes.resx">
+      <DependentUpon>frmAtualizacaoCustasClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmConsultaLancamentos.resx">
+      <DependentUpon>frmConsultaLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmContasAPagar.resx">
+      <DependentUpon>frmContasAPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmGerenciamentoProcessos.resx">
+      <DependentUpon>frmGerenciamentoProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmGerenciamentoContasPagar.resx">
+      <DependentUpon>frmGerenciamentoContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmGerenciamentoRecebimentos.resx">
+      <DependentUpon>frmGerenciamentoRecebimentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmAtualizacaoHonorariosProcessos.resx">
+      <DependentUpon>frmAtualizacaoHonorariosProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmLancamentoCustasProcessos.resx">
+      <DependentUpon>frmLancamentoCustasProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmAnexarDocumentoDigital.resx">
+      <DependentUpon>frmAnexarDocumentoDigital.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmMovimentacaoConta.resx">
+      <DependentUpon>frmMovimentacaoConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmMovimentacaoPastas.resx">
+      <DependentUpon>frmMovimentacaoPastas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmMovimentacaoProcessos.resx">
+      <DependentUpon>frmMovimentacaoProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmMovimentoConta.resx">
+      <DependentUpon>frmMovimentoConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movimentacao\frmGerenciamentoCalendario.resx">
+      <DependentUpon>frmGerenciamentoCalendario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioContasAAAAPAGAR.resx">
+      <DependentUpon>frmRelatorioContasAAAAPAGAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioLocalizacaoProcesso.resx">
+      <DependentUpon>frmRelatorioLocalizacaoProcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioMalaDireta.resx">
+      <DependentUpon>frmRelatorioMalaDireta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioTransacoesBancarias.resx">
+      <DependentUpon>frmRelatorioTransacoesBancarias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasPrincipais\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioClientes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioClientes.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioClientesAgrupado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioClientesAgrupado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioHonorarios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioHonorarios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioMovimentacao.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioMovimentacao.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioProcessos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioProcessos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\FCRRelatorioProcessosGCliente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>FCRRelatorioProcessosGCliente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\RelLocalizacaoProcesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelLocalizacaoProcesso.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\RelTransacoesBancarias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelTransacoesBancarias.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\RelTransacoesBancarias1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelTransacoesBancarias1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\FrmRelatorioClientes.resx">
+      <DependentUpon>FrmRelatorioClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasPrincipais\frmCadastroEmpresaInicial.resx">
+      <DependentUpon>frmCadastroEmpresaInicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Relatorios\frmRelatorioMovimentacoes.resx">
+      <DependentUpon>frmRelatorioMovimentacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioHonorarios.resx">
+      <DependentUpon>frmRelatorioHonorarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioProcessos.resx">
+      <DependentUpon>frmRelatorioProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelasPrincipais\frmMenuPrincipal.resx">
+      <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SAEA_TemporaryKey.pfx" />
+    <None Include="_SAEA_Banco_DataSet.xsc">
+      <DependentUpon>_SAEA_Banco_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_SAEA_Banco_DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_SAEA_Banco_DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_SAEA_Banco_DataSet.xss">
+      <DependentUpon>_SAEA_Banco_DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icone1.ico" />
+    <Content Include="SAEA%28Banco%29.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+      <Visible>False</Visible>
+      <ProductName>SQL Server Compact 3.5 SP2</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
