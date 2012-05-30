@@ -210,7 +210,8 @@ namespace SAEA.Movimentacao
                 {
                     ttbClientes.Text = gerencia.listarClientes(dgvResultado.Rows[dgvResultado.SelectedRows[0].Index].Cells["pro_numero"].Value.ToString());
                 }
-                catch(Exception exceeeeeeeeeeption) {
+                catch(Exception exx) 
+                {
                     ttbClientes.Text = "";
                 }
             }

@@ -8,7 +8,6 @@ using System.Text;
 using System.Windows.Forms;
 using CrystalDecisions.CrystalReports.Engine;
 using SAEA.Classes;
-using SAEA.Relatorios.Crystal;
 
 namespace SAEA.Movimentacao
 {
@@ -28,16 +27,16 @@ namespace SAEA.Movimentacao
 
         private void btnGerar_Click(object sender, EventArgs e)
         {
-            ReportDocument crDocument = new RelLocalizacaoProcesso();
-            //crDocument.Load(Application.StartupPath + @"\..\..\RelLocalizacaoProcesso.rpt");
+            ReportDocument crDocument = new ReportDocument();
+            crDocument.Load(Application.StartupPath + @"\..\..\RelLocalizacaoProcesso.rpt");
 
             if (rbSemFiltro.Checked)
             {
-                crDocument.SetDataSource(new RelProcesso(new BancoM()).semfiltro());
+                crDocument.SetDataSource(new RelProcesso(new Banco()).semfiltro());
             }
             else if (ckbNome.Checked && !ckbSituacao.Checked)
             {
-                crDocument.SetDataSource(new RelProcesso(new BancoM()).porNome(ttbNome.Text));
+                crDocument.SetDataSource(new RelProcesso(new Banco()).porNome(ttbNome.Text));
             }
             else if (!ckbNome.Checked && ckbSituacao.Checked)
             {
@@ -60,6 +59,8 @@ namespace SAEA.Movimentacao
         {
             if (ckbNome.Checked || ckbSituacao.Checked)
                 rbSemFiltro.Checked = false;
+            else
+                rbSemFiltro.Checked = true;
         }
 
         private void rbSemFiltro_CheckedChanged(object sender, EventArgs e)

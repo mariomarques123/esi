@@ -8,9 +8,9 @@ namespace SAEA.Classes
 {
     class RelProcesso
     {
-        BancoM banco;
+        Banco banco;
 
-        public RelProcesso(BancoM banco)
+        public RelProcesso(Banco banco)
         {
             this.banco = banco;
         }
@@ -19,9 +19,11 @@ namespace SAEA.Classes
         {
             DataTable dtt;
 
-            string SQL = "SELECT C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao" +
-                            " FROM Clientes AS C INNER JOIN Processos_Clientes AS PC ON C.Cli_Codigo = PC.Cli_Codigo "+
-                            " INNER JOIN Processos AS PO ON PC.Pro_Numero = PO.Pro_Numero";
+            string SQL = "SELECT " +
+                         " Empresa.Emp_nome, Empresa.Emp_CNPJ, Empresa.Emp_telefone, Empresa.Emp_CEP, Empresa.Emp_endereco, Empresa.Emp_email, Empresa.Emp_numero,Empresa.Emp_cidade,Empresa.emp_UF," +
+                         " C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao" +
+                         " FROM Processos PO, Processos_Clientes PC, Clientes C, Empresa" +
+                         " WHERE PO.pro_numero = PC.pro_numero and C.cli_codigo = PC.cli_codigo";
 
             banco.executeQuery(SQL, out dtt);
 
@@ -32,9 +34,12 @@ namespace SAEA.Classes
         {
             DataTable dtt;
 
-            string SQL = "SELECT  C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao"+
-                            " FROM Processos PO, Processos_Clientes PC, Clientes C"+
-                            " WHERE PO.pro_numero = PC.pro_numero and C.cli_codigo = PC.cli_codigo AND C.cli_nome like @nome";
+            string SQL = "SELECT " +
+                         " Empresa.Emp_nome, Empresa.Emp_CNPJ, Empresa.Emp_telefone, Empresa.Emp_CEP, Empresa.Emp_endereco, Empresa.Emp_email, Empresa.Emp_numero,Empresa.Emp_cidade,Empresa.emp_UF," +
+                         " C.Cli_Nome, PO.Pro_Numero, PO.Pro_Forum, PO.Pro_Tipo, PO.Pro_Area, PO.Pro_Situacao, PO.Pro_Juiz, PO.Pro_Descricao" +
+                         " FROM Processos PO, Processos_Clientes PC, Clientes C, Empresa" +
+                         " WHERE PO.pro_numero = PC.pro_numero and C.cli_codigo = PC.cli_codigo"+
+                         " AND C.cli_nome like @nome";
 
             banco.executeQuery(SQL, out dtt, "@nome", "%"+nome+"%");
 
@@ -61,7 +66,5 @@ namespace SAEA.Classes
 
             return dtt;
         }
-
-
     }
 }

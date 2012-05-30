@@ -1,6 +1,6 @@
 ﻿namespace SAEA.Relatorios
 {
-    partial class FrmRelatorioClientes
+    partial class frmRelatorioClientes
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRelatorioClientes));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRelatorioClientes));
             this.a = new System.Windows.Forms.GroupBox();
             this.rbBuscaCidade = new System.Windows.Forms.RadioButton();
             this.ttbNome = new System.Windows.Forms.TextBox();

@@ -87,65 +87,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="associativa\FrmAssociaFuncionarioContaBancaria.cs">
+    <Compile Include="Associativas\FrmAssociaFuncionarioContaBancaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="associativa\FrmAssociaFuncionarioContaBancaria.Designer.cs">
+    <Compile Include="Associativas\FrmAssociaFuncionarioContaBancaria.Designer.cs">
       <DependentUpon>FrmAssociaFuncionarioContaBancaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="associativa\FrmAssociaProcessoCliente.cs">
+    <Compile Include="Associativas\FrmAssociaProcessoCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="associativa\FrmAssociaProcessoCliente.Designer.cs">
+    <Compile Include="Associativas\FrmAssociaProcessoCliente.Designer.cs">
       <DependentUpon>FrmAssociaProcessoCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="associativa\FrmAssociaProcessoFuncionario.cs">
+    <Compile Include="Associativas\FrmAssociaProcessoFuncionario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="associativa\FrmAssociaProcessoFuncionario.Designer.cs">
+    <Compile Include="Associativas\FrmAssociaProcessoFuncionario.Designer.cs">
       <DependentUpon>FrmAssociaProcessoFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCadastroContaBancaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.Designer.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCadastroContaBancaria.Designer.cs">
       <DependentUpon>frmBuscaCadastroContaBancaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCadastroContasEsc.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCadastroContasEsc.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCadastroContasEsc.Designer.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCadastroContasEsc.Designer.cs">
       <DependentUpon>frmBuscaCadastroContasEsc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCliente.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmBuscaCliente.Designer.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaCliente.Designer.cs">
       <DependentUpon>frmBuscaCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="associativa\frmAssociaClienteContaBancaria.cs">
+    <Compile Include="Associativas\frmAssociaClienteContaBancaria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="associativa\frmAssociaClienteContaBancaria.Designer.cs">
+    <Compile Include="Associativas\frmAssociaClienteContaBancaria.Designer.cs">
       <DependentUpon>frmAssociaClienteContaBancaria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\FrmBuscaBancos.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaBancos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\FrmBuscaBancos.Designer.cs">
-      <DependentUpon>FrmBuscaBancos.cs</DependentUpon>
+    <Compile Include="Cadastros\Buscas\frmBuscaBancos.Designer.cs">
+      <DependentUpon>frmBuscaBancos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\FrmBuscaTiposCusto.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaTiposCusto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\FrmBuscaTiposCusto.Designer.cs">
-      <DependentUpon>FrmBuscaTiposCusto.cs</DependentUpon>
+    <Compile Include="Cadastros\Buscas\frmBuscaTiposCusto.Designer.cs">
+      <DependentUpon>frmBuscaTiposCusto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmConsultaFuncionariosAlter.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaFuncionariosAlter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\buscas\frmConsultaFuncionariosAlter.designer.cs">
-      <DependentUpon>frmConsultaFuncionariosAlter.cs</DependentUpon>
+    <Compile Include="Cadastros\Buscas\frmBuscaFuncionariosAlter.designer.cs">
+      <DependentUpon>frmBuscaFuncionariosAlter.cs</DependentUpon>
     </Compile>
     <Compile Include="Cadastros\frmCadastroBanco.cs">
       <SubType>Form</SubType>
@@ -183,23 +183,23 @@
     <Compile Include="Cadastros\frmCadastroClientes.Designer.cs">
       <DependentUpon>frmCadastroClientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\FrmCadastroTiposCusto.cs">
+    <Compile Include="Cadastros\frmCadastroTiposCusto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\FrmCadastroTiposCusto.Designer.cs">
-      <DependentUpon>FrmCadastroTiposCusto.cs</DependentUpon>
+    <Compile Include="Cadastros\frmCadastroTiposCusto.Designer.cs">
+      <DependentUpon>frmCadastroTiposCusto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\frmConsultaFuncionarios.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\frmConsultaFuncionarios.Designer.cs">
-      <DependentUpon>frmConsultaFuncionarios.cs</DependentUpon>
+    <Compile Include="Cadastros\Buscas\frmBuscaFuncionarios.Designer.cs">
+      <DependentUpon>frmBuscaFuncionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cadastros\frmConsultaPastas.cs">
+    <Compile Include="Cadastros\Buscas\frmBuscaPastas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cadastros\frmConsultaPastas.Designer.cs">
-      <DependentUpon>frmConsultaPastas.cs</DependentUpon>
+    <Compile Include="Cadastros\Buscas\frmBuscaPastas.Designer.cs">
+      <DependentUpon>frmBuscaPastas.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\AssociaClienteContaBanco.cs" />
     <Compile Include="Classes\AtualizacaoHonorario.cs" />
@@ -227,7 +227,9 @@
     <Compile Include="Classes\MovContas.cs" />
     <Compile Include="Classes\Pastas.cs" />
     <Compile Include="Classes\Processos.cs" />
+    <Compile Include="Classes\RelContas.cs" />
     <Compile Include="Classes\RelProcesso.cs" />
+    <Compile Include="Classes\RelTransacoes.cs" />
     <Compile Include="Classes\Usuarios.cs" />
     <Compile Include="Ferramentas\frmAlterarSenha.cs">
       <SubType>Form</SubType>
@@ -265,29 +267,23 @@
     <Compile Include="Ferramentas\frmVisualizador.designer.cs">
       <DependentUpon>frmVisualizador.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaCustoProcessoM.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.Designer.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaCustoProcessoM.Designer.cs">
       <DependentUpon>FrmBuscaCustoProcessoM.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaProcessos.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaProcessos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaProcessos.Designer.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaProcessos.Designer.cs">
       <DependentUpon>FrmBuscaProcessos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaHonorario.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaHonorario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Movimentacao\buscas\FrmBuscaHonorario.Designer.cs">
+    <Compile Include="Movimentacao\Buscas\FrmBuscaHonorario.Designer.cs">
       <DependentUpon>FrmBuscaHonorario.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Movimentacao\frmAtualizacaoCustasClientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Movimentacao\frmAtualizacaoCustasClientes.designer.cs">
-      <DependentUpon>frmAtualizacaoCustasClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Movimentacao\frmConsultaLancamentos.cs">
       <SubType>Form</SubType>
@@ -306,12 +302,6 @@
     </Compile>
     <Compile Include="Movimentacao\frmGerenciamentoProcessos.designer.cs">
       <DependentUpon>frmGerenciamentoProcessos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Movimentacao\frmGerenciamentoContasPagar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Movimentacao\frmGerenciamentoContasPagar.designer.cs">
-      <DependentUpon>frmGerenciamentoContasPagar.cs</DependentUpon>
     </Compile>
     <Compile Include="Movimentacao\frmGerenciamentoRecebimentos.cs">
       <SubType>Form</SubType>
@@ -343,23 +333,11 @@
     <Compile Include="Movimentacao\frmMovimentacaoConta.designer.cs">
       <DependentUpon>frmMovimentacaoConta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Movimentacao\frmMovimentacaoPastas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Movimentacao\frmMovimentacaoPastas.designer.cs">
-      <DependentUpon>frmMovimentacaoPastas.cs</DependentUpon>
-    </Compile>
     <Compile Include="Movimentacao\frmMovimentacaoProcessos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Movimentacao\frmMovimentacaoProcessos.designer.cs">
       <DependentUpon>frmMovimentacaoProcessos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Movimentacao\frmMovimentoConta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Movimentacao\frmMovimentoConta.designer.cs">
-      <DependentUpon>frmMovimentoConta.cs</DependentUpon>
     </Compile>
     <Compile Include="Movimentacao\frmGerenciamentoCalendario.cs">
       <SubType>Form</SubType>
@@ -367,23 +345,35 @@
     <Compile Include="Movimentacao\frmGerenciamentoCalendario.designer.cs">
       <DependentUpon>frmGerenciamentoCalendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Relatorios\frmRelatorioContasAAAAPAGAR.cs">
+    <Compile Include="Relatorios\Crystal\RelContasPagar1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelContasPagar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\RelLocalizacaoProcesso1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelLocalizacaoProcesso.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\Crystal\RelTransacoesBancarias1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelTransacoesBancarias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Relatorios\frmRelatorioContasPagar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatorios\frmRelatorioContasAAAAPAGAR.designer.cs">
-      <DependentUpon>frmRelatorioContasAAAAPAGAR.cs</DependentUpon>
+    <Compile Include="Relatorios\frmRelatorioContasPagar.designer.cs">
+      <DependentUpon>frmRelatorioContasPagar.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorios\frmRelatorioLocalizacaoProcesso.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Relatorios\frmRelatorioLocalizacaoProcesso.designer.cs">
       <DependentUpon>frmRelatorioLocalizacaoProcesso.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Relatorios\frmRelatorioMalaDireta.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Relatorios\frmRelatorioMalaDireta.designer.cs">
-      <DependentUpon>frmRelatorioMalaDireta.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorios\frmRelatorioTransacoesBancarias.cs">
       <SubType>Form</SubType>
@@ -433,29 +423,11 @@
       <DependentUpon>FCRRelatorioProcessosGCliente.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Relatorios\Crystal\RelLocalizacaoProcesso.cs">
-      <SubType>Component</SubType>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RelLocalizacaoProcesso.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="Relatorios\Crystal\RelTransacoesBancarias.cs">
-      <SubType>Component</SubType>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RelTransacoesBancarias.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="Relatorios\Crystal\RelTransacoesBancarias1.cs">
-      <SubType>Component</SubType>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RelTransacoesBancarias1.rpt</DependentUpon>
-    </Compile>
-    <Compile Include="Relatorios\FrmRelatorioClientes.cs">
+    <Compile Include="Relatorios\frmRelatorioClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatorios\FrmRelatorioClientes.designer.cs">
-      <DependentUpon>FrmRelatorioClientes.cs</DependentUpon>
+    <Compile Include="Relatorios\frmRelatorioClientes.designer.cs">
+      <DependentUpon>frmRelatorioClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="TelasPrincipais\frmCadastroEmpresaInicial.cs">
       <SubType>Form</SubType>
@@ -498,40 +470,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_SAEA_Banco_DataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="associativa\FrmAssociaFuncionarioContaBancaria.resx">
+    <EmbeddedResource Include="Associativas\FrmAssociaFuncionarioContaBancaria.resx">
       <DependentUpon>FrmAssociaFuncionarioContaBancaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="associativa\FrmAssociaProcessoCliente.resx">
+    <EmbeddedResource Include="Associativas\FrmAssociaProcessoCliente.resx">
       <DependentUpon>FrmAssociaProcessoCliente.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="associativa\FrmAssociaProcessoFuncionario.resx">
+    <EmbeddedResource Include="Associativas\FrmAssociaProcessoFuncionario.resx">
       <DependentUpon>FrmAssociaProcessoFuncionario.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCadastroContaBancaria.resx">
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaCadastroContaBancaria.resx">
       <DependentUpon>frmBuscaCadastroContaBancaria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCadastroContasEsc.resx">
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaCadastroContasEsc.resx">
       <DependentUpon>frmBuscaCadastroContasEsc.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\frmBuscaCliente.resx">
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaCliente.resx">
       <DependentUpon>frmBuscaCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="associativa\frmAssociaClienteContaBancaria.resx">
+    <EmbeddedResource Include="Associativas\frmAssociaClienteContaBancaria.resx">
       <DependentUpon>frmAssociaClienteContaBancaria.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\FrmBuscaBancos.resx">
-      <DependentUpon>FrmBuscaBancos.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaBancos.resx">
+      <DependentUpon>frmBuscaBancos.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\FrmBuscaTiposCusto.resx">
-      <DependentUpon>FrmBuscaTiposCusto.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaTiposCusto.resx">
+      <DependentUpon>frmBuscaTiposCusto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\buscas\frmConsultaFuncionariosAlter.resx">
-      <DependentUpon>frmConsultaFuncionariosAlter.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaFuncionariosAlter.resx">
+      <DependentUpon>frmBuscaFuncionariosAlter.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cadastros\frmCadastroBanco.resx">
       <DependentUpon>frmCadastroBanco.cs</DependentUpon>
@@ -551,14 +523,14 @@
     <EmbeddedResource Include="Cadastros\frmCadastroPastas.resx">
       <DependentUpon>frmCadastroPastas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\FrmCadastroTiposCusto.resx">
-      <DependentUpon>FrmCadastroTiposCusto.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\frmCadastroTiposCusto.resx">
+      <DependentUpon>frmCadastroTiposCusto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\frmConsultaFuncionarios.resx">
-      <DependentUpon>frmConsultaFuncionarios.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaFuncionarios.resx">
+      <DependentUpon>frmBuscaFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cadastros\frmConsultaPastas.resx">
-      <DependentUpon>frmConsultaPastas.cs</DependentUpon>
+    <EmbeddedResource Include="Cadastros\Buscas\frmBuscaPastas.resx">
+      <DependentUpon>frmBuscaPastas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ferramentas\frmAlterarSenha.resx">
       <DependentUpon>frmAlterarSenha.cs</DependentUpon>
@@ -578,18 +550,15 @@
     <EmbeddedResource Include="Ferramentas\frmVisualizador.resx">
       <DependentUpon>frmVisualizador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaCustoProcessoM.resx">
+    <EmbeddedResource Include="Movimentacao\Buscas\FrmBuscaCustoProcessoM.resx">
       <DependentUpon>FrmBuscaCustoProcessoM.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaProcessos.resx">
+    <EmbeddedResource Include="Movimentacao\Buscas\FrmBuscaProcessos.resx">
       <DependentUpon>FrmBuscaProcessos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\buscas\FrmBuscaHonorario.resx">
+    <EmbeddedResource Include="Movimentacao\Buscas\FrmBuscaHonorario.resx">
       <DependentUpon>FrmBuscaHonorario.cs</DependentUpon>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\frmAtualizacaoCustasClientes.resx">
-      <DependentUpon>frmAtualizacaoCustasClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Movimentacao\frmConsultaLancamentos.resx">
       <DependentUpon>frmConsultaLancamentos.cs</DependentUpon>
@@ -599,9 +568,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Movimentacao\frmGerenciamentoProcessos.resx">
       <DependentUpon>frmGerenciamentoProcessos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\frmGerenciamentoContasPagar.resx">
-      <DependentUpon>frmGerenciamentoContasPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Movimentacao\frmGerenciamentoRecebimentos.resx">
       <DependentUpon>frmGerenciamentoRecebimentos.cs</DependentUpon>
@@ -619,26 +585,29 @@
     <EmbeddedResource Include="Movimentacao\frmMovimentacaoConta.resx">
       <DependentUpon>frmMovimentacaoConta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\frmMovimentacaoPastas.resx">
-      <DependentUpon>frmMovimentacaoPastas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Movimentacao\frmMovimentacaoProcessos.resx">
       <DependentUpon>frmMovimentacaoProcessos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Movimentacao\frmMovimentoConta.resx">
-      <DependentUpon>frmMovimentoConta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Movimentacao\frmGerenciamentoCalendario.resx">
       <DependentUpon>frmGerenciamentoCalendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\frmRelatorioContasAAAAPAGAR.resx">
-      <DependentUpon>frmRelatorioContasAAAAPAGAR.cs</DependentUpon>
+    <EmbeddedResource Include="Relatorios\Crystal\RelContasPagar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelContasPagar1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\RelLocalizacaoProcesso.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelLocalizacaoProcesso1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\Crystal\RelTransacoesBancarias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelTransacoesBancarias1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\frmRelatorioContasPagar.resx">
+      <DependentUpon>frmRelatorioContasPagar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\frmRelatorioLocalizacaoProcesso.resx">
       <DependentUpon>frmRelatorioLocalizacaoProcesso.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\frmRelatorioMalaDireta.resx">
-      <DependentUpon>frmRelatorioMalaDireta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\frmRelatorioTransacoesBancarias.resx">
       <DependentUpon>frmRelatorioTransacoesBancarias.cs</DependentUpon>
@@ -670,20 +639,8 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>FCRRelatorioProcessosGCliente.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Crystal\RelLocalizacaoProcesso.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RelLocalizacaoProcesso.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Crystal\RelTransacoesBancarias.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RelTransacoesBancarias.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Crystal\RelTransacoesBancarias1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RelTransacoesBancarias1.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\FrmRelatorioClientes.resx">
-      <DependentUpon>FrmRelatorioClientes.cs</DependentUpon>
+    <EmbeddedResource Include="Relatorios\frmRelatorioClientes.resx">
+      <DependentUpon>frmRelatorioClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelasPrincipais\frmCadastroEmpresaInicial.resx">
       <DependentUpon>frmCadastroEmpresaInicial.cs</DependentUpon>

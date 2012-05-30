@@ -229,7 +229,6 @@
             this.toolStripMenuItem18.Name = "toolStripMenuItem18";
             this.toolStripMenuItem18.Size = new System.Drawing.Size(244, 22);
             this.toolStripMenuItem18.Text = "Movimentar contas";
-            this.toolStripMenuItem18.Click += new System.EventHandler(this.tsmMovimentarContas_Click);
             // 
             // toolStripMenuItem22
             // 
@@ -247,7 +246,6 @@
             this.toolStripMenuItem30.Name = "toolStripMenuItem30";
             this.toolStripMenuItem30.Size = new System.Drawing.Size(189, 22);
             this.toolStripMenuItem30.Text = "Mala direta";
-            this.toolStripMenuItem30.Click += new System.EventHandler(this.tsmRelatorioMalaDireta_Click);
             // 
             // ferramentasToolStripMenuItem
             // 
@@ -434,7 +432,6 @@
             this.tsmMovimentarContas.Name = "tsmMovimentarContas";
             this.tsmMovimentarContas.Size = new System.Drawing.Size(244, 22);
             this.tsmMovimentarContas.Text = "Movimentar contas";
-            this.tsmMovimentarContas.Click += new System.EventHandler(this.tsmMovimentarContas_Click);
             // 
             // tsmRelatorios
             // 
@@ -471,14 +468,12 @@
             this.tsmRelatorioContasPagar.Name = "tsmRelatorioContasPagar";
             this.tsmRelatorioContasPagar.Size = new System.Drawing.Size(189, 22);
             this.tsmRelatorioContasPagar.Text = "Contas a pagar";
-            this.tsmRelatorioContasPagar.Click += new System.EventHandler(this.tsmRelatorioContasPagar_Click);
             // 
             // tsmRelatorioContasPagas
             // 
             this.tsmRelatorioContasPagas.Name = "tsmRelatorioContasPagas";
             this.tsmRelatorioContasPagas.Size = new System.Drawing.Size(189, 22);
             this.tsmRelatorioContasPagas.Text = "Contas pagas";
-            this.tsmRelatorioContasPagas.Click += new System.EventHandler(this.tsmRelatorioContasPagas_Click);
             // 
             // tsmRelatorioHonorarios
             // 
@@ -506,7 +501,6 @@
             this.tsmRelatorioMalaDireta.Name = "tsmRelatorioMalaDireta";
             this.tsmRelatorioMalaDireta.Size = new System.Drawing.Size(189, 22);
             this.tsmRelatorioMalaDireta.Text = "Mala direta";
-            this.tsmRelatorioMalaDireta.Click += new System.EventHandler(this.tsmRelatorioMalaDireta_Click);
             // 
             // clientesToolStripMenuItem
             // 

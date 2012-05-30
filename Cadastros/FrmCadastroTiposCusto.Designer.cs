@@ -1,6 +1,6 @@
 ﻿namespace SAEA.Cadastros
 {
-    partial class FrmCadastroTiposCusto
+    partial class frmCadastroTiposCusto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCadastroTiposCusto));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastroTiposCusto));
             this.grbDados = new System.Windows.Forms.GroupBox();
             this.ttbValor = new System.Windows.Forms.MaskedTextBox();
             this.ttbCodigo = new System.Windows.Forms.TextBox();

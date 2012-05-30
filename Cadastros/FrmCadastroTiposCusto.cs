@@ -11,11 +11,11 @@ using SAEA.Cadastros.buscas;
 
 namespace SAEA.Cadastros
 {
-    public partial class FrmCadastroTiposCusto : Form
+    public partial class frmCadastroTiposCusto : Form
     {
         string titulo = "Cadastros de Tipos de Custo";
 
-        public FrmCadastroTiposCusto()
+        public frmCadastroTiposCusto()
         {
             InitializeComponent();
             inicializar();

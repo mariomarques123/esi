@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 using SAEA.Outros;
-
-//issae mew
+using SAEA.Relatorios;
 
 namespace SAEA
 {
@@ -15,7 +14,7 @@ namespace SAEA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmRelatorioTransacoesBancarias());
         }
     }
 }

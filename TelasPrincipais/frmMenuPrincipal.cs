@@ -107,7 +107,7 @@ namespace SAEA.Outros
 
         private void tiposCustoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmCadastroTiposCusto janela = new FrmCadastroTiposCusto();
+            frmCadastroTiposCusto janela = new frmCadastroTiposCusto();
             janela.ShowDialog();
             janela.Dispose();
         }
@@ -161,18 +161,6 @@ namespace SAEA.Outros
             f.Dispose();
         }
 
-        private void tsmMovimentarContas_Click(object sender, EventArgs e)
-        {
-            frmMovimentoConta f = new frmMovimentoConta();
-            f.ShowDialog();
-            f.Dispose();
-        }
-
-        private void tsmPainelInformacoes_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void tsmRelatorioProcessos_Click(object sender, EventArgs e)
         {
             frmRelatorioProcessos f = new frmRelatorioProcessos();
@@ -204,7 +192,7 @@ namespace SAEA.Outros
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmRelatorioClientes janela = new FrmRelatorioClientes();
+            frmRelatorioClientes janela = new frmRelatorioClientes();
             janela.ShowDialog();
             janela.Dispose();
         }
@@ -230,25 +218,5 @@ namespace SAEA.Outros
             janela.Dispose();
             
         }
-
-        private void tsmRelatorioContasPagas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tsmRelatorioContasPagar_Click(object sender, EventArgs e)
-        {
-            frmRelatorioContasAAAAPAGAR janela = new frmRelatorioContasAAAAPAGAR();
-            janela.ShowDialog();
-            janela.Dispose();
-        }
-
-        private void tsmRelatorioMalaDireta_Click(object sender, EventArgs e)
-        {
-            frmRelatorioMalaDireta janela = new frmRelatorioMalaDireta();
-            janela.ShowDialog();
-            janela.Dispose();
-        }
-
     }
 }

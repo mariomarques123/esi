@@ -63,11 +63,10 @@
             // cbbTipo
             // 
             this.cbbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbTipo.Enabled = false;
             this.cbbTipo.FormattingEnabled = true;
             this.cbbTipo.Items.AddRange(new object[] {
-            "C",
-            "D"});
+            "Crédito",
+            "Débito"});
             this.cbbTipo.Location = new System.Drawing.Point(200, 62);
             this.cbbTipo.Name = "cbbTipo";
             this.cbbTipo.Size = new System.Drawing.Size(193, 21);
@@ -75,7 +74,6 @@
             // 
             // dtpFim
             // 
-            this.dtpFim.Enabled = false;
             this.dtpFim.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFim.Location = new System.Drawing.Point(310, 29);
             this.dtpFim.Name = "dtpFim";
@@ -84,7 +82,6 @@
             // 
             // dtpIni
             // 
-            this.dtpIni.Enabled = false;
             this.dtpIni.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpIni.Location = new System.Drawing.Point(200, 30);
             this.dtpIni.Name = "dtpIni";
@@ -111,6 +108,7 @@
             this.ckbTipo.Text = "Tipo";
             this.ckbTipo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ckbTipo.UseVisualStyleBackColor = true;
+            this.ckbTipo.CheckedChanged += new System.EventHandler(this.ckbTipo_CheckedChanged);
             // 
             // ckbPeriodo
             // 
@@ -121,6 +119,7 @@
             this.ckbPeriodo.TabIndex = 39;
             this.ckbPeriodo.Text = "Período";
             this.ckbPeriodo.UseVisualStyleBackColor = true;
+            this.ckbPeriodo.CheckedChanged += new System.EventHandler(this.ckbPeriodo_CheckedChanged);
             // 
             // rbSemFiltro
             // 
@@ -133,6 +132,7 @@
             this.rbSemFiltro.TabStop = true;
             this.rbSemFiltro.Text = "Sem filtro";
             this.rbSemFiltro.UseVisualStyleBackColor = true;
+            this.rbSemFiltro.CheckedChanged += new System.EventHandler(this.rbSemFiltro_CheckedChanged);
             // 
             // pnlBotoes
             // 

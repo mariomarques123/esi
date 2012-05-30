@@ -1,0 +1,16 @@
+CREATE TABLE ContasPagar
+(
+	cop_codigo int NOT NULL IDENTITY (1,1),
+	
+	cop_descricao  nvarchar(100)  NOT NULL ,
+        cop_dataVenc  datetime NOT NULL ,
+	cop_valor  decimal(10,3)  NOT NULL,
+	cop_dataPag datetime NULL,
+	Fun_Codigo  int  NULL
+);
+
+ALTER TABLE ContasPagar
+    ADD CONSTRAINT  XPKContasPagar PRIMARY KEY (cop_codigo);
+	
+ALTER TABLE ContasPagar
+    ADD CONSTRAINT  FK_ContasPagarFuncionarios FOREIGN KEY (Fun_Codigo) REFERENCES Funcionarios(Fun_Codigo)

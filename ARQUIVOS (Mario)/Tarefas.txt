@@ -1,0 +1,17 @@
+4
+a.
+b. para cada tela a nevagacao como faz pra chegar nela
+5. rotina simples de backup, baixar na internet, rotinas prontas
+6-7 se quiser acrescentar algo
+
+Relatório:
+Cada aluno vai desenvolver 4 relatorios, relacionados as funcoes que implementaram, tendo:
+-os 4 com filtros (cliente,periodo,cliente/periodo,todos)
+-2 deles com agrupamento (agrupado por cidade, configuracao no crystal reports)
+Dar preferencia para funções fundamentais relevantes para o sistema
+
+avaliar terça feira depois da infoeste
+
+manual usuario (15-16-17?)
+
+

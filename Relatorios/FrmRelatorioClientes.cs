@@ -13,7 +13,7 @@ using SAEA.Relatorios.Crystal;
 
 namespace SAEA.Relatorios
 {
-    public partial class FrmRelatorioClientes : Form
+    public partial class frmRelatorioClientes : Form
     {
         private  DataTable tabelaDados;
         private  TipoRelatorioGerado tipoRelatorio;
@@ -21,7 +21,7 @@ namespace SAEA.Relatorios
         enum TipoRelatorioGerado { RelGrupoCidade, RelCidadeUnica, RelTodos, RelAndamento };
 
 
-        public FrmRelatorioClientes()
+        public frmRelatorioClientes()
         {
             InitializeComponent();
             tipoRelatorio = TipoRelatorioGerado.RelTodos;
