@@ -24,6 +24,7 @@ namespace SAEA.Outros
         {
             Usuarios usu = new Usuarios(new BancoM());
             DataTable dtt = usu.localizarPor("usu_login", ttbUsuario.Text);
+			
 
             if (ttbUsuario.Text.Trim() =="" || dtt.Rows.Count == 0)
             {
@@ -37,6 +38,20 @@ namespace SAEA.Outros
             }
             else
             {
+				//somente prosseguira quando os dados da empresa forem cadastrados corretamente!
+				
+				
+				Banco banco = new Banco();
+				CadastroDadosEmpresa consulta = new CadastroDadosEmpresa(banco);
+				banco.conecta();
+				
+				while (consulta.verificaPrimeiroAcesso())
+				{
+					frmCadastroEmpresaInicial janela = new frmCadastroEmpresaInicial();
+					janela.ShowDialog();
+					janela.Dispose(); 
+				}
+			
                 this.Visible = false;
                 frmMenuPrincipal f = new frmMenuPrincipal(dtt.Rows[0]);
                 f.ShowDialog();
